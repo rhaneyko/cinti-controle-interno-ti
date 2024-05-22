@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #171717;
+    
+    color: white;
+    -webkit-box-shadow: -1px -16.5px 12.5px 19.5px #5E5D5D;
+    -moz-box-shadow: -1px -16.5px 12.5px 19.5px #5E5D5D;
+    box-shadow: -1px -16.5px 12.5px 19.5px #5E5D5D;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 30px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #5E5D5D;
+    font-weight: bold;
+  }
+  
+  .contact-button {
+    padding: 10px 20px;
+    background-color: #27AE60;
+    border: none;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .contact-button:hover {
+    background-color: #27AE60;
+  }
