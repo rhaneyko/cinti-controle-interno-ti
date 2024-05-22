@@ -1,5 +1,7 @@
 import React from 'react'
-import Header from '../../header/Header'
+import Header from '../../Header/Header'
+
+import './Home.css'
 
 const Home = () => {
   return (

@@ -5,17 +5,19 @@ import './Header.css'
 
 const Header = () => {
   return (
-       <header className='header'>
+       <header className=''>
       <div className='logo'>
+        MENU
       </div>
       <nav>
         <ul className='nav-links'>
-          <li><a href='#home'>HOME</a></li>
-          <li><a href='#skills'>SKILLS</a></li>
-          <li><a href='#projects'>PROJETOS</a></li>
+          <li><a href='#home'>LINHAS TELEFONICAS</a></li>
+          <li><a href='#skills'>DESKTOP</a></li>
         </ul>
       </nav>
-      <button className='contact-button'>Contato</button>
+      <div>
+       nome do usuario, sair
+      </div>
     </header>
   )
 }
