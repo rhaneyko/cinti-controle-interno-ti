@@ -1,9 +1,9 @@
 import { Fragment } from 'react';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
-import Home from '../components/pages/Home';
-import Login from '../components/pages/Login';
-import Register from '../components/pages/Register';
+import Home from '../components/pages/Home/Home';
+import Login from '../components/pages/Login/Login';
+import Register from '../components/pages/Register/Register';
 
 const Private = ({ Item }) => {
     const signed = false;
