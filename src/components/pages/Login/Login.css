@@ -9,10 +9,12 @@
     display: flex;
     flex-direction: column;
 
+    height: 40vh;
+
 
     background-color: #FFF;
 }
 
 .label-form{
-    font-size: 2rem;
+     
 }
