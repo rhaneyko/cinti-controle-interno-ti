@@ -8,7 +8,7 @@ const Login = () => {
   const { signin } = useAuth();
   const navigate = useNavigate;
 
-  const [user, setUser] = useState('');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
@@ -17,7 +17,7 @@ const Login = () => {
       setError('Preencha todos os campos');
       return;
     }
-    const res = login(user, password);
+    const res = signin(user, password);
     if(res){
       setError(res);
       return
@@ -34,8 +34,8 @@ const Login = () => {
           className='input-form' 
           placeholder='Digite seu e-mail'
           type='text'
-          value={user}
-          onChange={(e) => [setUser(e.target.value), setError('')]}
+          value={email}
+          onChange={(e) => [setEmail(e.target.value), setError('')]}
         />
         <label className='label-form'>Senha</label>
         <input 
@@ -44,7 +44,8 @@ const Login = () => {
           type={'password'}
           onChange={(e) => [setPassword(e.target.value), setError('')]}
         />
-        <button>Entrar</button>
+        <p style={{color: 'red', fontSize: 15}} >{error}</p>
+        <button onClick={handleLogin}>Entrar</button>
       </form>
     </div>
   )
