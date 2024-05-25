@@ -13,11 +13,11 @@ const Login = () => {
   const [error, setError] = useState('');
 
   const handleLogin = () => {
-    if(!user || !password){
+    if(!email || !password){
       setError('Preencha todos os campos');
       return;
     }
-    const res = signin(user, password);
+    const res = signin(email, password);
     if(res){
       setError(res);
       return
