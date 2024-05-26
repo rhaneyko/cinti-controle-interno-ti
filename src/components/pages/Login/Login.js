@@ -6,34 +6,34 @@ import './Login.css'
 
 const Login = () => {
   const { signin } = useAuth();
-  const navigate = useNavigate;
+  const navigate = useNavigate();
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
   const handleLogin = () => {
-    if(!email || !password){
+    if(!email || !password) {
       setError('Preencha todos os campos');
       return;
     }
     const res = signin(email, password);
     if(res){
       setError(res);
-      return
+      return;
     }
     navigate('/home')
-  }
+}
 
   return (
     <div className='login-container'>
-      <h1 className='title'>Entre</h1>
+      <h1 className='title'>Faça seu login</h1>
       <form className='form'>
         <label className='label-form'>E-mail</label>
         <input 
           className='input-form' 
           placeholder='Digite seu e-mail'
-          type='text'
+          type='email'
           value={email}
           onChange={(e) => [setEmail(e.target.value), setError('')]}
         />

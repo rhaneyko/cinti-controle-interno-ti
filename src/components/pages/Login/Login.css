@@ -3,6 +3,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    height: 100vh;
 }
 
 .title{
@@ -15,7 +17,9 @@
     flex-direction: column;
     background-color: #FFF;
 
-    padding: 25px 50px;
+    padding: 25px 30px 30px 25px;
+
+    border-radius: 20px;
 }
 
 .label-form{
