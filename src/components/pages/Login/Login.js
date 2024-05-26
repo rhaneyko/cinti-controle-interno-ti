@@ -27,9 +27,8 @@ const Login = () => {
 
   return (
     <div className='login-container'>
-      <h1>Entre</h1>
+      <h1 className='title'>Entre</h1>
       <form className='form'>
-      <input class="border-2 border-rose-500 ..."/>
         <label className='label-form'>E-mail</label>
         <input 
           className='input-form' 
@@ -45,8 +44,8 @@ const Login = () => {
           type={'password'}
           onChange={(e) => [setPassword(e.target.value), setError('')]}
         />
-        <p style={{color: 'red', fontSize: 15}} >{error}</p>
-        <button onClick={handleLogin}>Entrar</button>
+        <p style={{color: 'red', fontSize: 15}}>{error}</p>
+        <button onClick={handleLogin} className='button-form'>Entrar</button>
       </form>
     </div>
   )
