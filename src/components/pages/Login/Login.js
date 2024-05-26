@@ -29,6 +29,7 @@ const Login = () => {
     <div className='login-container'>
       <h1>Entre</h1>
       <form className='form'>
+      <input class="border-2 border-rose-500 ..."/>
         <label className='label-form'>E-mail</label>
         <input 
           className='input-form' 
