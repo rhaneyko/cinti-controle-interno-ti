@@ -2,12 +2,13 @@ import React from 'react'
 
 import Header from '../../Header/Header'
 import './Home.css'
+import PhoneLines from '../../PhoneLines/PhoneLines'
 
 const Home = () => {
   return (
     <div>
       <Header/>
-      HOME PAGE
+      <PhoneLines/>
     </div>
   )
 }
